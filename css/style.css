@@ -153,7 +153,7 @@ p{
 /* -------------------- */
 /* $Header */
 /* -------------------- */
-.bg{
+/*.bg{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -173,9 +173,9 @@ p{
 	height: 100%;
 	background-color: #161616;
 	opacity: 0.5;
-}
+}*/
 .header{
-	background-color: hsl(83deg, 63%, 61%);
+	background-color: hsl(83deg 63% 61%);
 }
 .englishTitle{
 	position: absolute;
@@ -323,8 +323,8 @@ p{
 /* $About */
 /* -------------------- */
 .about{
-	padding-top: 20px;
-	padding-bottom: 20px;
+	/*padding-top: 36px;*/
+	padding-bottom: 36px;
 	/*border: 1px solid #000;*/
 }
 .jumbotron{
