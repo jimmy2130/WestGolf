@@ -458,9 +458,9 @@ p{
 	align-items: center;
 }
 .subHeadingWrapper span {
+	flex: 1;
 	height: 1px;
 	background: black;
-	flex: 1;
 }
 .myBlogPost__subHeading{
 	font-size: 28px;
@@ -477,20 +477,12 @@ p{
 		padding-left: 8px;
 		padding-right: 8px;
 	}
-}
-.myBlogPost__row{
-	padding-bottom: 32px;
-}
-@media (max-width: 768px){
-	.myBlogPost__row{
-		padding-bottom: 20px;
+	.subHeadingWrapper.shipei {
+		padding-top: 16px;
 	}
 }
-.cardContainer{
-	transform: translateY(8px);
-	width: 100%;
-	/*border: 1px solid #000;*/
-}
+
+
 .imgBox{
 	display: block;
 }
@@ -512,42 +504,7 @@ p{
 	background-size: cover;
 	background-position: center;
 }
-.infoContainer {
-	/*width: 100%;*/
-	/*border: 1px solid #000;*/
-	padding-left: 16px;
-}
-@media (max-width: 768px) {
-	.infoContainer {
-		padding-left: 8px;
-	}	
-}
-@media (max-width: 480px) {
-	.infoContainer {
-		padding-left: 0;
-	}
-}
-.infoContainer .name {
-	padding: 8px;
-	font-size: 32px;
-}
-.infoContainer .textBox {
-	padding: 8px;
-	font-size: 14px;
-	line-height: 1.8;
-	/*border: 1px solid #000;*/
-	max-width: 500px;
-}
-@media (max-width: 768px){
-	.infoContainer .name{
-		font-size: 24px;
-	}
-	.infoContainer .textBox {
-		font-size: 14px;
-		line-height: 1.5;
-		padding-top: 0;
-	}
-}
+
 /* -------------------- */
 /* $Footer */
 /* -------------------- */

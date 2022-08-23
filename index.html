@@ -21,6 +21,82 @@
 				aspect-ratio: 1 / 1;
 			}
 		}
+
+		.myBlogPost__row{
+			display: flex;
+			gap: 16px;
+			padding-bottom: 32px;
+			/*position: relative;*/
+		}
+		.cardContainer{
+			flex: 1;
+			transform: translateY(8px);
+			/*width: 100%;*/
+			/*border: 1px solid #000;*/
+		}
+		.infoContainer {
+			padding: 8px;
+			flex: 3;
+			/*width: 100%;*/
+			/*border: 1px solid #000;*/
+			/*padding-left: 16px;*/
+		}
+		@media (max-width: 768px){
+			.myBlogPost__row{
+				gap: 8px;
+				padding-bottom: 20px;
+			}
+			.cardContainer {
+				flex: 5;
+			}
+			.infoContainer {
+				/*padding-left: 8px;*/
+				flex: 7;
+			}
+		}
+		.infoContainer .name {
+			font-size: 32px;
+			font-weight: bold;
+			margin-bottom: 12px;
+		}
+		.infoContainer .textBox {
+			font-size: 14px;
+			line-height: 1.8;
+			/*border: 1px solid #000;*/
+			max-width: 500px;
+		}
+		.infoContainer .textBox ul:last-child {
+			margin-top: 16px;
+		}
+		@media (max-width: 768px){
+			.infoContainer .name{
+				font-size: 24px;
+			}
+			.infoContainer .textBox {
+				font-size: 14px;
+				line-height: 1.5;
+				padding-top: 0;
+			}
+		}
+		@media (max-width: 480px){
+			.myBlogPost__row{
+				gap: 0px;
+			}
+			.cardContainer {
+				position: absolute;
+				top: 16px;
+				right: 16px;
+				width: 80px;
+				clip-path: circle();
+			}
+			.infoContainer {
+				padding: 16px;
+			}
+			.infoContainer .name {
+				font-size: 28px;
+				font-weight: bold;
+			}
+		}
 	</style>
 </head>
 <body>
@@ -94,7 +170,11 @@
 			<!-- Start video -->
 			<div class="video">
 				<div class="container">
-					<h1 class="myBlogPost__heading">教學理念</h1>
+					<div class="subHeadingWrapper shipei">
+						<span></span>
+						<h2 class="myBlogPost__subHeading">教學理念</h2>
+						<span></span>
+					</div>
 					<div class="videoContainer">
 						<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F2553271488332303%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
 					</div>
@@ -105,189 +185,152 @@
 			<!-- Start my blog post -->
 			<div id="myBlogPost" class="myBlogPost">
 				<div class="container">
-					<!-- <h1 class="myBlogPost__heading">教練團隊</h1> -->
-					<div class="subHeadingWrapper">
+					<div class="subHeadingWrapper shipei">
 						<span></span>
 						<h2 class="myBlogPost__subHeading">教練團隊 石牌店</h2>
 						<span></span>
 					</div>
 					<div class="row myBlogPost__row">
-						<div class="col-sm-3 col-xs-5" style="padding-right: 0px;">
-							<div class="cardContainer">
-								<img src="images/GaryLuCrop.jpg" alt=""/>
+						<div class="cardContainer">
+							<img src="images/GaryLuCrop.jpg" alt=""/>
+						</div>
+						<div class="infoContainer">
+							<div class="name">呂西鈞 Gary Lu</div>
+							<div class="textBox">
+								<ul>1978年轉入職業球員</ul>
+								<ul>職業冠軍26勝 (1979~1997)</ul>
+								<ul>亞巡賽四屆總冠軍</ul>
+								<ul>日巡賽三勝</ul>
+								<ul>四大賽五次參賽</ul>
+								<ul>PGA 理事長 (1996~1999)</ul>
+								<ul>高協總教練 (2002~2016)</ul>
+								<ul>呂西鈞高爾夫教學主持人</ul>
+								<ul><b>教學特色：</b>球員動作慣性改造、青少年輔導、球場策略與執行、加強短桿能力、提升高爾夫樂趣</ul>
 							</div>
 						</div>
-						<div class="col-sm-9 col-xs-7" style="padding-left: 0px;">
-							<div class="infoContainer">
-								<div class="name" style="font-weight: bold">呂西鈞 Gary Lu</div>
-								<div class="textBox">
-									<ul>1978年轉入職業球員</ul>
-									<ul>職業冠軍26勝 (1979~1997)</ul>
-									<ul>亞巡賽四屆總冠軍</ul>
-									<ul>日巡賽三勝</ul>
-									<ul>四大賽五次參賽</ul>
-									<ul>PGA 理事長 (1996~1999)</ul>
-									<ul>高協總教練 (2002~2016)</ul>
-									<ul>呂西鈞高爾夫教學主持人</ul>
-									<ul><b>教學特色：</b>球員動作慣性改造、青少年輔導、球場策略與執行、加強短桿能力、提升高爾夫樂趣</ul>
-								</div>
+					</div>
+					<div class="row myBlogPost__row">						
+						<div class="cardContainer">
+							<img src="images/AngieTsai2Crop.jpg" alt=""/>
+						</div>
+						<div class="infoContainer">
+							<div class="name">蔡麗香 (蔡采君)</div>
+							<div class="textBox">
+								<ul>1975年轉入職業球員</ul>
+								<ul>生涯冠軍共十四場(日本九場、台灣五場)</ul>
+								<ul>東方高爾夫學院院長</ul>
+								<ul>台灣女子職業高爾夫協會創辦會長第二、三任理事長</ul>
+								<ul style="margin: 0">呂西鈞高爾夫教學教練</ul>
 							</div>
 						</div>
 					</div>
 					<div class="row myBlogPost__row">
-						<div class="col-sm-3 col-xs-5" style="padding-right: 0px;">
-							<div class="cardContainer">
-								<img src="images/AngieTsai2Crop.jpg" alt=""/>
-							</div>
+						<div class="cardContainer">
+							<img src="images/UncleHsuCrop.jpg" alt=""/>
 						</div>
-						<div class="col-sm-9 col-xs-7" style="padding-left: 0px;">
-							<div class="infoContainer">
-								<div class="name" style="font-weight: bold">蔡麗香 (蔡采君)</div>
-								<div class="textBox">
-									<ul>1975年轉入職業球員</ul>
-									<ul>生涯冠軍共十四場(日本九場、台灣五場)</ul>
-									<ul>東方高爾夫學院院長</ul>
-									<ul>台灣女子職業高爾夫協會創辦會長第二、三任理事長</ul>
-									<ul>呂西鈞高爾夫教學教練</ul>
-								</div>
+						<div class="infoContainer">
+							<div class="name">許興 Uncle Hsu</div>
+							<div class="textBox">
+								<ul>球場管理經驗</ul>
+								<ul>練習場管理經驗</ul>
+								<ul>現職 水蓮練習場教練</ul>
+								<ul><b>教學特色：</b>多年職業選手觀察經驗、善於球道策略輔導、女性球員教學專長、兒童青少年教育輔導</ul>
 							</div>
-						</div>
+						</div>						
 					</div>
 					<div class="row myBlogPost__row">
-						<div class="col-sm-3 col-xs-5" style="padding-right: 0px;">
-							<div class="cardContainer">
-								<img src="images/UncleHsuCrop.jpg" alt=""/>
-							</div>
+						<div class="cardContainer">
+							<img src="images/VincentLu.jpg" alt=""/>
 						</div>
-						<div class="col-sm-9 col-xs-7" style="padding-left: 0px;">
-							<div class="infoContainer">
-								<div class="name" style="font-weight: bold">許興 Uncle Hsu</div>
-								<div class="textBox">
-									<ul>球場管理經驗</ul>
-									<ul>練習場管理經驗</ul>
-									<ul>現職 水蓮練習場教練</ul>
-									<ul><b>教學特色：</b>多年職業選手觀察經驗、善於球道策略輔導、女性球員教學專長、兒童青少年教育輔導</ul>
-								</div>
+						<div class="infoContainer">
+							<div class="name">呂榮峰 Vincent Lu</div>
+							<div class="textBox">
+								<ul>2000年亞運培訓選手</ul>
+								<ul>2000年台灣PGA專業教練</ul>
+								<ul>專業球具組裝維修</ul>
+								<ul>呂西鈞高爾夫教學教練</ul>
+								<ul><b>教學特色：</b>學員球具選配專長、擊球收桿強化訓練、學員動作基礎深化、球道策略執行、果嶺周邊短桿技巧、孩童基礎學習與進階</ul>
 							</div>
-						</div>
+						</div>						
 					</div>
 					<div class="row myBlogPost__row">
-						<div class="col-sm-3 col-xs-5" style="padding-right: 0px;">
-							<div class="cardContainer">
-								<img src="images/VincentLu.jpg" alt=""/>
-							</div>
+						<div class="cardContainer">
+							<img src="images/KaiChan.jpg" alt=""/>
 						</div>
-						<div class="col-sm-9 col-xs-7" style="padding-left: 0px;">
-							<div class="infoContainer">
-								<div class="name" style="font-weight: bold">呂榮峰 Vincent Lu</div>
-								<div class="textBox">
-									<ul>2000年亞運培訓選手</ul>
-									<ul>2000年台灣PGA專業教練</ul>
-									<ul>專業球具組裝維修</ul>
-									<ul>呂西鈞高爾夫教學教練</ul>
-									<ul><b>教學特色：</b>學員球具選配專長、擊球收桿強化訓練、學員動作基礎深化、球道策略執行、果嶺周邊短桿技巧、孩童基礎學習與進階</ul>
-								</div>
+						<div class="infoContainer">
+							<div class="name">詹登凱 Kai Chan</div>
+							<div class="textBox">
+								<ul>2002年開始從事高爾夫教學</ul>
+								<ul>澳洲格里菲斯大學運動管理學系高爾夫學員</ul>
+								<ul>澳洲新英格蘭大學高爾夫管理學畢業</ul>
+								<ul>AGTF澳洲高爾夫教練聯盟認證教練</ul>
+								<ul>林口區興福國小專聘高爾夫教練</ul>
+								<ul>台北美國學校高中部高爾夫校隊教練</ul>
+								<ul>台北美國學校中學部高爾夫社團教練</ul>
+								<ul>Titleist簽約贊助教練</ul>
+								<ul>Positive Coaching Alliance Certified Coach</ul>
+								<ul>呂西鈞高爾夫教學教練</ul>
+								<ul><b>教學特色：</b>全英語教學、兒童基本動作養成、短桿選擇時機及果嶺判讀、揮桿節奏控制、球場策略及執行</ul>
 							</div>
-						</div>
+						</div>						
 					</div>
 					<div class="row myBlogPost__row">
-						<div class="col-sm-3 col-xs-5" style="padding-right: 0px;">
-							<div class="cardContainer">
-								<img src="images/KaiChan.jpg" alt=""/>
-							</div>
+						<div class="cardContainer">
+							<img src="images/TigerChenCrop.jpg" alt=""/>
 						</div>
-						<div class="col-sm-9 col-xs-7" style="padding-left: 0px;">
-							<div class="infoContainer">
-								<div class="name" style="font-weight: bold">詹登凱 Kai Chan</div>
-								<div class="textBox">
-									<ul>2002年開始從事高爾夫教學</ul>
-									<ul>澳洲格里菲斯大學運動管理學系高爾夫學員</ul>
-									<ul>澳洲新英格蘭大學高爾夫管理學畢業</ul>
-									<ul>AGTF澳洲高爾夫教練聯盟認證教練</ul>
-									<ul>林口區興福國小專聘高爾夫教練</ul>
-									<ul>台北美國學校高中部高爾夫校隊教練</ul>
-									<ul>台北美國學校中學部高爾夫社團教練</ul>
-									<ul>Titleist簽約贊助教練</ul>
-									<ul>Positive Coaching Alliance Certified Coach</ul>
-									<ul>呂西鈞高爾夫教學教練</ul>
-									<ul><b>教學特色：</b>全英語教學、兒童基本動作養成、短桿選擇時機及果嶺判讀、揮桿節奏控制、球場策略及執行</ul>
-								</div>
+						<div class="infoContainer">
+							<div class="name">陳韋全 Tiger Chen</div>
+							<div class="textBox">
+								<ul>文化大學體育系</ul>
+								<ul>台灣PGA專業教練</ul>
+								<ul>ThreeBond參賽選手</ul>
+								<ul>呂西鈞高爾夫教學教練</ul>
+								<ul><b>教學特色：</b>注重基本動作、提升擊球穩定性、提升擊球力量、讓學員可以有自我調整錯誤的觀念</ul>
 							</div>
-						</div>
+						</div>						
 					</div>
 					<div class="row myBlogPost__row">
-						<div class="col-sm-3 col-xs-5" style="padding-right: 0px;">
-							<div class="cardContainer">
-								<img src="images/TigerChenCrop.jpg" alt=""/>
-							</div>
+						<div class="cardContainer">
+							<img src="images/BerryLiu3.jpg" alt=""/>
 						</div>
-						<div class="col-sm-9 col-xs-7" style="padding-left: 0px;">
-							<div class="infoContainer">
-								<div class="name" style="font-weight: bold">陳韋全 Tiger Chen</div>
-								<div class="textBox">
-									<ul>文化大學體育系</ul>
-									<ul>台灣PGA專業教練</ul>
-									<ul>ThreeBond參賽選手</ul>
-									<ul>呂西鈞高爾夫教學教練</ul>
-									<ul><b>教學特色：</b>注重基本動作、提升擊球穩定性、提升擊球力量、讓學員可以有自我調整錯誤的觀念</ul>
-								</div>
+						<div class="infoContainer">
+							<div class="name">劉京儒 Berry Liu</div>
+							<div class="textBox">
+								<ul>台北市立體育學院高爾夫專長</ul>
+								<ul>中華高協教練</ul>
+								<ul>TPI Level 2</ul>
+								<ul>呂西鈞高爾夫教學教練</ul>
+								<ul><b>教學特色：</b>客製化教學、提升高爾夫能力、個人化球具fitting、球道攻略執行、兒童基本動作養成</ul>
 							</div>
-						</div>
+						</div>						
 					</div>
 					<div class="row myBlogPost__row">
-						<div class="col-sm-3 col-xs-5" style="padding-right: 0px;">
-							<div class="cardContainer">
-								<img src="images/BerryLiu3.jpg" alt=""/>
-							</div>
+						<div class="cardContainer">
+							<img src="images/IvyTsai.jpg" alt=""/>
 						</div>
-						<div class="col-sm-9 col-xs-7" style="padding-left: 0px;">
-							<div class="infoContainer">
-								<div class="name" style="font-weight: bold">劉京儒 Berry Liu</div>
-								<div class="textBox">
-									<ul>台北市立體育學院高爾夫專長</ul>
-									<ul>中華高協教練</ul>
-									<ul>TPI Level 2</ul>
-									<ul>呂西鈞高爾夫教學教練</ul>
-									<ul><b>教學特色：</b>客製化教學、提升高爾夫能力、個人化球具fitting、球道攻略執行、兒童基本動作養成</ul>
-								</div>
+						<div class="infoContainer">
+							<div class="name">蔡麗雲 Ivy Tsai</div>
+							<div class="textBox">
+								<ul>東華球場青少年短桿訓練教練</ul>
+								<ul>中華高協C級裁判</ul>
+								<ul>呂西鈞高爾夫教學教練</ul>
+								<ul><b>教學特色：</b>青少年團隊引領訓練、兒童青少年教學輔導、女性球員專業評鑑、球道攻略與選桿應用、短桿技巧教學</ul>
 							</div>
-						</div>
-					</div>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-3 col-xs-5" style="padding-right: 0px;">
-							<div class="cardContainer">
-								<img src="images/IvyTsai.jpg" alt=""/>
-							</div>
-						</div>
-						<div class="col-sm-9 col-xs-7" style="padding-left: 0px;">
-							<div class="infoContainer">
-								<div class="name" style="font-weight: bold">蔡麗雲 Ivy Tsai</div>
-								<div class="textBox">
-									<ul>東華球場青少年短桿訓練教練</ul>
-									<ul>中華高協C級裁判</ul>
-									<ul>呂西鈞高爾夫教學教練</ul>
-									<ul><b>教學特色：</b>青少年團隊引領訓練、兒童青少年教學輔導、女性球員專業評鑑、球道攻略與選桿應用、短桿技巧教學</ul>
-								</div>
-							</div>
-						</div>
+						</div>						
 					</div>
           <div class="row myBlogPost__row">
-            <div class="col-sm-3 col-xs-5" style="padding-right: 0px;">
-              <div class="cardContainer">
-              	<img src="images/AndyLin.jpg" alt=""/>
-              </div>
+            <div class="cardContainer">
+            	<img src="images/AndyLin.jpg" alt=""/>
             </div>
-            <div class="col-sm-9 col-xs-7" style="padding-left: 0px;">
-              <div class="infoContainer">
-                <div class="name" style="font-weight: bold">林宗翰 Andy Lin</div>
-                <div class="textBox">
-                  <ul>台北城市大學高爾夫球隊</ul>
-                  <ul>揚昇高爾夫球場培訓球員</ul>
-                  <ul>全國高爾夫球場培訓球員</ul>
-                  <ul>中華民國高爾夫協會教練</ul>
-                  <ul>呂西鈞高爾夫教學教練</ul>
-                  <ul><b>教學特色：</b>多年觀察國內外職業選手經驗、客製化教學、提升高爾夫能力、兒童基礎動作教學、球場策略以及果嶺邊短桿運用教學、提升推桿穩定性教學</ul>
-                </div>
+            <div class="infoContainer">
+              <div class="name">林宗翰 Andy Lin</div>
+              <div class="textBox">
+                <ul>台北城市大學高爾夫球隊</ul>
+                <ul>揚昇高爾夫球場培訓球員</ul>
+                <ul>全國高爾夫球場培訓球員</ul>
+                <ul>中華民國高爾夫協會教練</ul>
+                <ul>呂西鈞高爾夫教學教練</ul>
+                <ul><b>教學特色：</b>多年觀察國內外職業選手經驗、客製化教學、提升高爾夫能力、兒童基礎動作教學、球場策略以及果嶺邊短桿運用教學、提升推桿穩定性教學</ul>
               </div>
             </div>
           </div>
@@ -297,47 +340,39 @@
 						<span></span>
 					</div>
 					<div class="row myBlogPost__row">
-						<div class="col-sm-3 col-xs-5" style="padding-right: 0px;">
-							<div class="cardContainer">
-								<img src="images/RoseKao.jpg" alt=""/>
-							</div>
+						<div class="cardContainer">
+							<img src="images/RoseKao.jpg" alt=""/>
 						</div>
-						<div class="col-sm-9 col-xs-7" style="padding-left: 0px;">
-							<div class="infoContainer">
-								<div class="name" style="font-weight: bold">高育薇 Rose Kao</div>
-								<div class="textBox">
-									<ul>國立臺灣大學畢業、師大體育系碩士</ul>
-									<ul>美國PGCC職業高爾夫球學院</ul>
-									<ul>中華民國高爾夫協進會認證合格教練</ul>
-									<ul>世界認證美國教練聯盟專業教練</ul>
-									<ul>高爾夫雜誌台灣50大名師</ul>
-									<ul>緯來博斯高球示範教學專屬教練</ul>
-									<ul>FOX體育台專業球評</ul>
-									<ul>呂西鈞高爾夫教學教練</ul>
-									<ul><b>教學特色：</b></ul>
-									<ul>初學、進階依據個人差點球齡體能球路，量身訂做系統課程</ul>
-									<ul>配合電腦分析、輔助器材，以最科學及最自然之啟發式教學</ul>
-									<ul>成人兒童，美式教學 Simple & Fun 簡明易懂、活用生動</ul>
-									<ul>指導球場攻略與心理學，減輕壓力技巧、避免運動傷害、修正姿勢、減少桿數</ul>
-								</div>
+						<div class="infoContainer">
+							<div class="name">高育薇 Rose Kao</div>
+							<div class="textBox">
+								<ul>國立臺灣大學畢業、師大體育系碩士</ul>
+								<ul>美國PGCC職業高爾夫球學院</ul>
+								<ul>中華民國高爾夫協進會認證合格教練</ul>
+								<ul>世界認證美國教練聯盟專業教練</ul>
+								<ul>高爾夫雜誌台灣50大名師</ul>
+								<ul>緯來博斯高球示範教學專屬教練</ul>
+								<ul>FOX體育台專業球評</ul>
+								<ul>呂西鈞高爾夫教學教練</ul>
+								<ul style="margin-top: 16px"><b>教學特色：</b></ul>
+								<ul>初學、進階依據個人差點球齡體能球路，量身訂做系統課程</ul>
+								<ul>配合電腦分析、輔助器材，以最科學及最自然之啟發式教學</ul>
+								<ul>成人兒童，美式教學 Simple & Fun 簡明易懂、活用生動</ul>
+								<ul style="margin: 0">指導球場攻略與心理學，減輕壓力技巧、避免運動傷害、修正姿勢、減少桿數</ul>
 							</div>
 						</div>
 					</div>
 					<div class="row myBlogPost__row">
-						<div class="col-sm-3 col-xs-5" style="padding-right: 0px;">
-							<div class="cardContainer">
-								<img src="images/AaronLin3.jpg" alt=""/>
-							</div>
+						<div class="cardContainer">
+							<img src="images/AaronLin3.jpg" alt=""/>
 						</div>
-						<div class="col-sm-9 col-xs-7" style="padding-left: 0px;">
-							<div class="infoContainer">
-								<div class="name" style="font-weight: bold">林敬恩 Aaron Lin</div>
-								<div class="textBox">
-									<ul>淡水青少年培訓選手</ul>
-									<ul>中華高協教練</ul>
-									<ul>呂西鈞高爾夫教學教練</ul>
-									<ul><b>教學特色：</b>客製化教學、提升高爾夫能力、增加木桿開球距離、個人化球具fitting、球道攻略執行、短距選桿球路應用、兒童高爾夫啟蒙</ul>
-								</div>
+						<div class="infoContainer">
+							<div class="name">林敬恩 Aaron Lin</div>
+							<div class="textBox">
+								<ul>淡水青少年培訓選手</ul>
+								<ul>中華高協教練</ul>
+								<ul>呂西鈞高爾夫教學教練</ul>
+								<ul><b>教學特色：</b>客製化教學、提升高爾夫能力、增加木桿開球距離、個人化球具fitting、球道攻略執行、短距選桿球路應用、兒童高爾夫啟蒙</ul>
 							</div>
 						</div>
 					</div>
