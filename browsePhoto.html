@@ -7,6 +7,24 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+	  .imageGridWrapper {
+	  	display: grid;
+	  	grid-template-columns: 1fr 1fr;
+	  	gap: 8px;
+	  }
+	  .imageGridWrapper img {
+	    display: block;
+	    width: 100%;
+	    aspect-ratio: 4 / 3;
+	    object-fit: cover;
+	  }
+	  @media (max-width: 480px) {
+	  	.imageGridWrapper {
+	  		grid-template-columns: 1fr;
+	  	}
+	  }
+	</style>
 </head>
 <body>
 	<div class="wrapper">
@@ -52,151 +70,22 @@
 			<div class="video">
 				<div class="container contentBlock">
 					<h1 class="myBlogPost__heading">活動花絮</h1>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-6 col-xs-12">
-							<div class="cardContainer">
-								<div class="imgBox">
-									<a class="u-block" href="browsePhoto.html">
-										<div class="imgBox-innerForPhoto innerForPhoto16-9">
-											<div class="image" style="background-image: url('images/photo001.jpg')"></div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-xs-12">
-							<div class="cardContainer">
-								<div class="imgBox">
-									<a class="u-block" href="browsePhoto.html">
-										<div class="imgBox-innerForPhoto innerForPhoto16-9">
-											<div class="image" style="background-image: url('images/photo002.jpg')"></div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
+					<div class="imageGridWrapper">
+						<img src="images/wallpaper012.jpg" alt=""/>
+						<img src="images/wallpaper011.jpg" alt=""/>
+						<img src="images/photo010.jpg" alt=""/>
+						<img src="images/photo013.jpg" alt=""/>
+						<img src="images/photo011.jpg" alt=""/>
+						<img src="images/photo012.jpg" alt=""/>
+						<img src="images/photo004.jpg" alt=""/>
+						<img src="images/photo006.jpg" alt=""/>
 					</div>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-6 col-xs-12">
-							<div class="cardContainer">
-								<div class="imgBox">
-									<a class="u-block" href="browsePhoto.html">
-										<div class="imgBox-innerForPhoto">
-											<div class="image" style="background-image: url('images/photo010.jpg')"></div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-xs-12">
-							<div class="cardContainer">
-								<div class="imgBox">
-									<a class="u-block" href="browsePhoto.html">
-										<div class="imgBox-innerForPhoto">
-											<div class="image" style="background-image: url('images/photo013.jpg')"></div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-6 col-xs-12">
-							<div class="cardContainer">
-								<div class="imgBox">
-									<a class="u-block" href="browsePhoto.html">
-										<div class="imgBox-innerForPhoto">
-											<div class="image" style="background-image: url('images/photo011.jpg')"></div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-xs-12">
-							<div class="cardContainer">
-								<div class="imgBox">
-									<a class="u-block" href="browsePhoto.html">
-										<div class="imgBox-innerForPhoto">
-											<div class="image" style="background-image: url('images/photo012.jpg')"></div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-6 col-xs-12">
-							<div class="cardContainer">
-								<div class="imgBox">
-									<a class="u-block" href="browsePhoto.html">
-										<div class="imgBox-innerForPhoto">
-											<div class="image" style="background-image: url('images/photo003.jpg')"></div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-xs-12">
-							<div class="cardContainer">
-								<div class="imgBox">
-									<a class="u-block" href="browsePhoto.html">
-										<div class="imgBox-innerForPhoto">
-											<div class="image" style="background-image: url('images/photo004.jpg')"></div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-6 col-xs-12">
-							<div class="cardContainer">
-								<div class="imgBox">
-									<a class="u-block" href="browsePhoto.html">
-										<div class="imgBox-innerForPhoto">
-											<div class="image" style="background-image: url('images/photo005.jpg')"></div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-xs-12">
-							<div class="cardContainer">
-								<div class="imgBox">
-									<a class="u-block" href="browsePhoto.html">
-										<div class="imgBox-innerForPhoto">
-											<div class="image" style="background-image: url('images/photo006.jpg')"></div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-6 col-xs-12">
-							<div class="cardContainer">
-								<div class="imgBox">
-									<a class="u-block" href="browsePhoto.html">
-										<div class="imgBox-innerForPhoto">
-											<div class="image" style="background-image: url('images/photo007.jpg')"></div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-xs-12">
-							<div class="cardContainer">
-								<div class="imgBox">
-									<a class="u-block" href="browsePhoto.html">
-										<div class="imgBox-innerForPhoto">
-											<div class="image" style="background-image: url('images/photo008.jpg')"></div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<h5 class="more_link"><a href="https://www.facebook.com/pg/lhcgolf/photos/?ref=page_internal" target="_blank"><span class="more_link">點擊連結</span>看更多照片</a></h5>
+					<h5 class="more_link" style="text-align: center;">
+						<a href="https://www.facebook.com/lhcgolf/photos" target="_blank">
+							<span>點擊連結</span>
+						看更多照片
+						</a>
+					</h5>
 				</div>
 			</div>
 			<!-- End video -->

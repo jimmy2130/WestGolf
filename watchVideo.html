@@ -7,6 +7,31 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+	  .imageGridWrapper {
+	  	display: flex;
+	  	flex-direction: column;
+	  	gap: 16px;
+	  	max-width: 560px;
+	  	margin-left: auto;
+	  	margin-right: auto;
+	  }
+	  .iframeContainer {
+		  position: relative;
+		  overflow: hidden;
+		  width: 100%;
+		  padding-top: 56.25%;
+	  }
+	  .iframeContainer iframe{
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  bottom: 0;
+		  right: 0;
+		  width: 100%;
+		  height: 100%;
+	  }
+	</style>
 </head>
 <body>
 	<div class="wrapper">
@@ -52,35 +77,26 @@
 			<div class="video">
 				<div class="container contentBlock">
 					<h1 class="myBlogPost__heading">教學影片</h1>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-6 col-xs-12">
-							<div class="videoWrapper">
-							    <!-- 這裡是貼上YouTube的嵌入iframe碼-->
-							    <iframe width="560" height="315" src="https://www.youtube.com/embed/kWRZpU7P81g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="imageGridWrapper">
+							<div class="iframeContainer">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/kWRZpU7P81g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
-						</div>
-						<div class="col-sm-6 col-xs-12">
-							<div class="videoWrapper">
-							    <!-- 這裡是貼上YouTube的嵌入iframe碼-->
-							    <iframe width="560" height="315" src="https://www.youtube.com/embed/pKpAXBVImag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<div class="iframeContainer">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/pKpAXBVImag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
-						</div>
+							<div class="iframeContainer">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/Sv-OtNHuG9E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<div class="iframeContainer">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/zFKCp_YN10Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
 					</div>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-6 col-xs-12">
-							<div class="videoWrapper">
-							    <!-- 這裡是貼上YouTube的嵌入iframe碼-->
-							    <iframe width="560" height="315" src="https://www.youtube.com/embed/Sv-OtNHuG9E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							</div>
-						</div>
-						<div class="col-sm-6 col-xs-12">
-							<div class="videoWrapper">
-							    <!-- 這裡是貼上YouTube的嵌入iframe碼-->
-							    <iframe width="560" height="315" src="https://www.youtube.com/embed/zFKCp_YN10Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							</div>
-						</div>
-					</div>
-					<h5 class="more_link"><a href="https://www.youtube.com/channel/UCub6r0itMGLE6p88D_mZyWw/videos" target="_blank"><span class="more_link">點擊連結</span>看更多影片</a></h5>
+					<h5 class="more_link" style="text-align: center;">
+						<a href="https://www.youtube.com/channel/UCub6r0itMGLE6p88D_mZyWw/videos" target="_blank">
+							<span class="more_link">點擊連結</span>
+						看更多影片
+						</a>
+					</h5>
 				</div>
 			</div>
 			<!-- End video -->
