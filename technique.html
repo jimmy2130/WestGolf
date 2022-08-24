@@ -7,6 +7,47 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.gridLayoutWrapper {
+			max-width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 16px;
+		}
+		@media (max-width: 768px) {
+			.gridLayoutWrapper {
+				grid-template-columns: 1fr;
+			}
+		}
+		.contentWrapper {
+		}		
+	  .iframeContainer {
+		  position: relative;
+		  overflow: hidden;
+		  width: 100%;
+		  padding-top: 56.25%;
+		  margin-bottom: 16px;
+	  }
+	  .iframeContainer iframe {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  bottom: 0;
+		  right: 0;
+		  width: 100%;
+		  height: 100%;
+		}
+		.infoHeader {
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 8px;
+		}
+		.infoContent {
+			margin-bottom: 12px;
+		}
+	</style>
 </head>
 <body>
 	<div class="wrapper">
@@ -52,176 +93,131 @@
 			<div class="video">
 				<div class="container contentBlock">
 					<h1 class="myBlogPost__heading">球技教學</h1>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-4 col-xs-12">
-							<div class="videoWrapper video">
-							    <!-- 這裡是貼上YouTube的嵌入iframe碼-->
-								<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F839840799493788%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-							</div>
+					<div class="gridLayoutWrapper">
+						<div class="contentWrapper">
+								<div class="iframeContainer">
+									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F839840799493788%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+								</div>
+								<div class="infoContainer">
+									<header class="infoHeader">《呂老師小撇步》001</header>
+									<p class="infoContent">許多球友在推桿時，對於起桿與送桿的長度與力度經常難以拿捏。我的經驗是，4：6。</p>
+								</div>
 						</div>
-						<div class="col-sm-8 col-xs-12">
-							<div class="infoContainer">
-								<p>《呂老師小撇步》001<br><br>許多球友在推桿時，對於起桿與送桿的長度與力度經常難以拿捏。我的經驗是，4：6。</p>
-							</div>
+						<div class="contentWrapper">
+								<div class="iframeContainer">
+									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864640593680475%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+								</div>
+								<div class="infoContainer">
+									<header class="infoHeader">《呂老師小撇步》002</header>
+									<p class="infoContent">在起伏較明顯的果嶺，尤其是下坡，我會在距離判斷後找出一個轉折點，然後用減少敲擊的動作送出。</p>
+								</div>
 						</div>
-					</div>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-4 col-xs-12">
-							<div class="videoWrapper video">
-							    <!-- 這裡是貼上YouTube的嵌入iframe碼-->
-								<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864640593680475%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-							</div>
+						<div class="contentWrapper">
+								<div class="iframeContainer">
+									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864642277013640%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+								</div>
+								<div class="infoContainer">
+									<header class="infoHeader">《呂老師小撇步》003</header>
+									<p class="infoContent">果嶺的上坡地形，通常我會設定在過洞後的一個目標，再以足夠的送桿來達到過洞的推球概念。</p>
+								</div>
 						</div>
-						<div class="col-sm-8 col-xs-12">
-							<div class="infoContainer">
-								<p>《呂老師小撇步》002<br><br>在起伏較明顯的果嶺，尤其是下坡，我會在距離判斷後找出一個轉折點，然後用減少敲擊的動作送出。</p>
-							</div>
+						<div class="contentWrapper">
+								<div class="iframeContainer">
+									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864654363679098%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+								</div>
+								<div class="infoContainer">
+									<header class="infoHeader">《呂老師小撇步》004</header>
+									<p class="infoContent">在右往左曲的長推桿，我會在弧度最大的途中設一個轉折點，然後起桿時順著地形略為往內起桿送出。</p>
+								</div>
 						</div>
-					</div>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-4 col-xs-12">
-							<div class="videoWrapper video">
-							    <!-- 這裡是貼上YouTube的嵌入iframe碼-->
-								<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864642277013640%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-							</div>
+						<div class="contentWrapper">
+								<div class="iframeContainer">
+									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864659817011886%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+								</div>
+								<div class="infoContainer">
+									<header class="infoHeader">《呂老師小撇步》005</header>
+									<p class="infoContent">在多變的傾斜果嶺推桿不但要掌控距離還需觀察流向，特別左至右的推球，我會設定一個接近洞口點，桿面左延伸後會經由轉折點流轉至目標。</p>
+								</div>
 						</div>
-						<div class="col-sm-8 col-xs-12">
-							<div class="infoContainer">
-								<p>《呂老師小撇步》003<br><br>果嶺的上坡地形，通常我會設定在過洞後的一個目標，再以足夠的送桿來達到過洞的推球概念。</p>
-							</div>
+						<div class="contentWrapper">
+								<div class="iframeContainer">
+									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864920426985825%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+								</div>
+								<div class="infoContainer">
+									<header class="infoHeader">《呂老師小撇步》006</header>
+									<p class="infoContent">短切球能處理的好，可說能畫龍點睛，尤其在高爾夫球的表現上，選落點、選桿非常重要，先掌握一項技能，以P桿為例，落一半滾動一半。</p>
+								</div>
 						</div>
-					</div>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-4 col-xs-12">
-							<div class="videoWrapper video">
-							    <!-- 這裡是貼上YouTube的嵌入iframe碼-->
-								<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864654363679098%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-							</div>
+						<div class="contentWrapper">
+								<div class="iframeContainer">
+									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864926056985262%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+								</div>
+								<div class="infoContainer">
+									<header class="infoHeader">《呂老師小撇步》007</header>
+									<p class="infoContent">果嶺邊的切球，有多種不同距離與選桿，52度 切桿帶有稍微滾動的球路是不錯的選擇。</p>
+								</div>
 						</div>
-						<div class="col-sm-8 col-xs-12">
-							<div class="infoContainer">
-								<p>《呂老師小撇步》004<br><br>在右往左曲的長推桿，我會在弧度最大的途中設一個轉折點，然後起桿時順著地形略為往內起桿送出。</p>
-							</div>
+						<div class="contentWrapper">
+								<div class="iframeContainer">
+									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864930670318134%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+								</div>
+								<div class="infoContainer">
+									<header class="infoHeader">《呂老師小撇步》008</header>
+									<p class="infoContent">在落地後沒有太多滾動空間的旗位，只能使用最大開放角度(58或60)的切桿。</p>
+									<p class="infoContent">★上桿時適度的曲起手腕，下擊動作力量運用在第一段。</p>
+								</div>
 						</div>
-					</div>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-4 col-xs-12">
-							<div class="videoWrapper video">
-							    <!-- 這裡是貼上YouTube的嵌入iframe碼-->
-								<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864659817011886%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-							</div>
+						<div class="contentWrapper">
+								<div class="iframeContainer">
+									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864939010317300%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+								</div>
+								<div class="infoContainer">
+									<header class="infoHeader">《呂老師小撇步》009</header>
+									<p class="infoContent">沙坑球是多數球友的夢魘，除了需要一支得宜的切桿。</p>
+									<p class="infoContent">★重點在起落的過程，保持一致的揮桿速度並防止翻轉桿面。</p>
+								</div>
 						</div>
-						<div class="col-sm-8 col-xs-12">
-							<div class="infoContainer">
-								<p>《呂老師小撇步》005<br><br>在多變的傾斜果嶺推桿不但要掌控距離還需觀察流向，特別左至右的推球，我會設定一個接近洞口點，桿面左延伸後會經由轉折點流轉至目標。</p>
-							</div>
+						<div class="contentWrapper">
+								<div class="iframeContainer">
+									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864945516983316%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+								</div>
+								<div class="infoContainer">
+									<header class="infoHeader">《呂老師小撇步》010</header>
+									<p class="infoContent">常見的低球位，最容易在擊球時往右偏。</p>
+									<p class="infoContent">★因此設定方向於左側，減少身體上揚，往外起桿不翻轉桿面。</p>
+								</div>
 						</div>
-					</div>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-4 col-xs-12">
-							<div class="videoWrapper video">
-							    <!-- 這裡是貼上YouTube的嵌入iframe碼-->
-								<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864920426985825%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-							</div>
+						<div class="contentWrapper">
+								<div class="iframeContainer">
+									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864955366982331%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+								</div>
+								<div class="infoContainer">
+									<header class="infoHeader">《呂老師小撇步》011</header>
+									<p class="infoContent">球道中難免有地形起伏的狀況，首要注意的是站姿的設定，左高右低的上坡球因為重心轉移不易，容易使桿面翻轉而球路偏左。</p>
+									<p class="infoContent">★因此設定時重心多於右側(低方)在於起桿時略微往內。</p>
+								</div>
 						</div>
-						<div class="col-sm-8 col-xs-12">
-							<div class="infoContainer">
-								<p>《呂老師小撇步》006<br><br>短切球能處理的好，可說能畫龍點睛，尤其在高爾夫球的表現上，選落點、選桿非常重要，先掌握一項技能，以P桿為例，落一半滾動一半。</p>
-							</div>
+						<div class="contentWrapper">
+								<div class="iframeContainer">
+									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864969633647571%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+								</div>
+								<div class="infoContainer">
+									<header class="infoHeader">《呂老師小撇步》012</header>
+									<p class="infoContent">球道中有不平的球位都有它的難度，尤其右高左低的技術球。</p>
+									<p class="infoContent">★先設定重心於左側(低方)</p>
+								</div>
 						</div>
-					</div>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-4 col-xs-12">
-							<div class="videoWrapper video">
-							    <!-- 這裡是貼上YouTube的嵌入iframe碼-->
-								<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864926056985262%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-							</div>
-						</div>
-						<div class="col-sm-8 col-xs-12">
-							<div class="infoContainer">
-								<p>《呂老師小撇步》007<br><br>果嶺邊的切球，有多種不同距離與選桿，52度 切桿帶有稍微滾動的球路是不錯的選擇。</p>
-							</div>
-						</div>
-					</div>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-4 col-xs-12">
-							<div class="videoWrapper video">
-							    <!-- 這裡是貼上YouTube的嵌入iframe碼-->
-								<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864930670318134%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-							</div>
-						</div>
-						<div class="col-sm-8 col-xs-12">
-							<div class="infoContainer">
-								<p>《呂老師小撇步》008<br><br>在落地後沒有太多滾動空間的旗位，只能使用最大開放角度(58或60)的切桿。<br><br>★上桿時適度的曲起手腕，下擊動作力量運用在第一段。</p>
-							</div>
-						</div>
-					</div>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-4 col-xs-12">
-							<div class="videoWrapper video">
-							    <!-- 這裡是貼上YouTube的嵌入iframe碼-->
-								<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864939010317300%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-							</div>
-						</div>
-						<div class="col-sm-8 col-xs-12">
-							<div class="infoContainer">
-								<p>《呂老師小撇步》009<br><br>沙坑球是多數球友的夢魘，除了需要一支得宜的切桿。<br><br>★重點在起落的過程，保持一致的揮桿速度並防止翻轉桿面。</p>
-							</div>
-						</div>
-					</div>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-4 col-xs-12">
-							<div class="videoWrapper video">
-							    <!-- 這裡是貼上YouTube的嵌入iframe碼-->
-								<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864945516983316%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-							</div>
-						</div>
-						<div class="col-sm-8 col-xs-12">
-							<div class="infoContainer">
-								<p>《呂老師小撇步》010<br><br>常見的低球位，最容易在擊球時往右偏。<br><br>★因此設定方向於左側，減少身體上揚，往外起桿不翻轉桿面。</p>
-							</div>
+						<div class="contentWrapper">
+								<div class="iframeContainer">
+									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F1974642199346970%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+								</div>
+								<div class="infoContainer">
+									<header class="infoHeader">《呂老師小撇步》013</header>
+									<p class="infoContent">球道沙坑擊球會因為站位鬆動而影響揮桿。</p>
+									<p class="infoContent">★除了稍握短桿身，少一號的揮桿幅度，盡量減少身體移動。</p>
+								</div>
 						</div>
 					</div>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-4 col-xs-12">
-							<div class="videoWrapper video">
-							    <!-- 這裡是貼上YouTube的嵌入iframe碼-->
-								<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864955366982331%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>	
-							</div>
-						</div>
-						<div class="col-sm-8 col-xs-12">
-							<div class="infoContainer">
-								<p>《呂老師小撇步》011<br><br>球道中難免有地形起伏的狀況，首要注意的是站姿的設定，左高右低的上坡球因為重心轉移不易，容易使桿面翻轉而球路偏左。<br><br>★因此設定時重心多於右側(低方)在於起桿時略微往內。</p>
-							</div>
-						</div>
-					</div>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-4 col-xs-12">
-							<div class="videoWrapper video">
-							    <!-- 這裡是貼上YouTube的嵌入iframe碼-->
-								<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864969633647571%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>	
-							</div>
-						</div>
-						<div class="col-sm-8 col-xs-12">
-							<div class="infoContainer">
-								<p>《呂老師小撇步》012<br><br>球道中有不平的球位都有它的難度，尤其右高左低的技術球。<br><br>★先設定重心於左側(低方)再略為往外起桿，才能充分取用到桿面由上而下。</p>
-							</div>
-						</div>
-					</div>
-					<div class="row myBlogPost__row">
-						<div class="col-sm-4 col-xs-12">
-							<div class="videoWrapper video">
-							    <!-- 這裡是貼上YouTube的嵌入iframe碼-->
-								<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F1974642199346970%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>	
-							</div>
-						</div>
-						<div class="col-sm-8 col-xs-12">
-							<div class="infoContainer">
-								<p>《呂老師小撇步》013<br><br>球道沙坑擊球會因為站位鬆動而影響揮桿。<br><br>★除了稍握短桿身，少一號的揮桿幅度，盡量減少身體移動。</p>
-							</div>
-						</div>
-					</div>
-					<h5 class="more_link"><a href="https://www.facebook.com/lhcgolf/" target="_blank"><span class="more_link">點擊連結</span>看更多教學</a></h5>
 				</div>
 			</div>
 			<!-- End video -->
