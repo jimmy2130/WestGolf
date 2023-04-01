@@ -510,7 +510,7 @@ p{
 /* -------------------- */
 .flex-container {
 	display: flex;
-	justify-content: space-between;
+/*	justify-content: space-between;*/
 }
 .info-container {
 	min-width: 225px;
