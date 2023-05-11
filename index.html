@@ -32,6 +32,13 @@
 				min-height: 480px;
 				/*position: relative;*/
 			}
+
+			@media (max-width: 480px) {
+				.myBlogPost__row {
+					min-height: revert;
+					padding-bottom: 24px;
+				}
+			}
 			.cardContainer {
 				flex: 1;
 				transform: translateY(8px);
