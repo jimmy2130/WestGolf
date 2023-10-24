@@ -1,255 +1,435 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
-	<meta charset="UTF-8">
-	<title>呂西鈞高爾夫推廣中心</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/layout.css">
-	<link rel="stylesheet" href="css/style.css">
-	<style>
-		.gridLayoutWrapper {
-			max-width: 800px;
-			margin-left: auto;
-			margin-right: auto;
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			gap: 16px;
-		}
-		@media (max-width: 768px) {
+	<head>
+		<meta charset="UTF-8" />
+		<title>呂西鈞高爾夫推廣中心</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/layout.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<style>
 			.gridLayoutWrapper {
-				grid-template-columns: 1fr;
+				max-width: 800px;
+				margin-left: auto;
+				margin-right: auto;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 16px;
 			}
-		}
-		.contentWrapper {
-		}		
-	  .iframeContainer {
-		  position: relative;
-		  overflow: hidden;
-		  width: 100%;
-		  padding-top: 56.25%;
-		  margin-bottom: 16px;
-	  }
-	  .iframeContainer iframe {
-		  position: absolute;
-		  top: 0;
-		  left: 0;
-		  bottom: 0;
-		  right: 0;
-		  width: 100%;
-		  height: 100%;
-		}
-		.infoHeader {
-			font-size: 18px;
-			font-weight: bold;
-			margin-bottom: 8px;
-		}
-		.infoContent {
-			margin-bottom: 12px;
-		}
-	</style>
-</head>
-<body>
-	<div class="wrapper">
-		<!-- Start background -->
-		<!-- <div class="bg"></div> -->
-		<!-- End background -->
+			@media (max-width: 768px) {
+				.gridLayoutWrapper {
+					grid-template-columns: 1fr;
+				}
+			}
+			.iframeContainer {
+				position: relative;
+				overflow: hidden;
+				width: 100%;
+				padding-top: 56.25%;
+				margin-bottom: 16px;
+			}
+			.iframeContainer iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				width: 100%;
+				height: 100%;
+			}
+			.infoHeader {
+				font-size: 18px;
+				font-weight: bold;
+				margin-bottom: 8px;
+			}
+			.infoContent {
+				margin-bottom: 12px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- Start background -->
+			<!-- <div class="bg"></div> -->
+			<!-- End background -->
 
-		<!-- Start header -->
-		<header class="header">
-
-			<div class="container">
-				<div class="navbar">
-					<div class="title navbar__title">
-						<a href="index.html">呂西鈞高爾夫推廣中心</a>
-					</div>
-					<div class="englishTitle"><a href="index.html">WEST GOLD SPORTS INC.</a></div>
-					<a href="#overlay" class="menu-toggle">
-						<span></span>
-						<span></span>
-						<span></span>
-					</a>
-					<div id="overlay" class="nav navbar__nav popup-nav">
-						<ul class="menu nav__menu">
-							<li><a href="index.html" class="menu__item">首頁</a></li>
-							<li><a href="technique.html" class="menu__item">球技教學</a></li>
-							<li><a href="watchVideo.html" class="menu__item">教學影片</a></li>
-							<li><a href="browsePhoto.html" class="menu__item">活動花絮</a></li>
-<!-- 							<li><a href="#" class="menu__item">多餘連結</a></li> -->
-						</ul>
-						<a href="#!" class="popup-close">
+			<!-- Start header -->
+			<header class="header">
+				<div class="container">
+					<div class="navbar">
+						<div class="title navbar__title">
+							<a href="index.html">呂西鈞高爾夫推廣中心</a>
+						</div>
+						<div class="englishTitle">
+							<a href="index.html">WEST GOLD SPORTS INC.</a>
+						</div>
+						<a href="#overlay" class="menu-toggle">
+							<span></span>
 							<span></span>
 							<span></span>
 						</a>
-					</div>	
+						<div id="overlay" class="nav navbar__nav popup-nav">
+							<ul class="menu nav__menu">
+								<li><a href="index.html" class="menu__item">首頁</a></li>
+								<li>
+									<a href="technique.html" class="menu__item">球技教學</a>
+								</li>
+								<li>
+									<a href="watchVideo.html" class="menu__item">教學影片</a>
+								</li>
+								<li>
+									<a href="browsePhoto.html" class="menu__item">活動花絮</a>
+								</li>
+								<!-- 							<li><a href="#" class="menu__item">多餘連結</a></li> -->
+							</ul>
+							<a href="#!" class="popup-close">
+								<span></span>
+								<span></span>
+							</a>
+						</div>
+					</div>
 				</div>
-			</div>
-		</header>
-		<!-- End header -->
+			</header>
+			<!-- End header -->
 
-		<!-- Start main -->
-		<section class="main">
-			<!-- Start video -->
-			<div class="video">
-				<div class="container contentBlock">
-					<h1 class="myBlogPost__heading">球技教學</h1>
-					<div class="gridLayoutWrapper">
-						<div class="contentWrapper">
+			<!-- Start main -->
+			<section class="main">
+				<!-- Start video -->
+				<div class="video">
+					<div class="container contentBlock">
+						<h1 class="myBlogPost__heading">球技教學</h1>
+						<div class="gridLayoutWrapper">
+							<div class="contentWrapper">
 								<div class="iframeContainer">
-									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F839840799493788%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+									<iframe
+										src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F839840799493788%2F&show_text=0&width=560"
+										width="560"
+										height="315"
+										style="border: none; overflow: hidden"
+										scrolling="no"
+										frameborder="0"
+										allowTransparency="true"
+										allowfullscreen="true"
+									></iframe>
 								</div>
 								<div class="infoContainer">
 									<header class="infoHeader">《呂老師小撇步》001</header>
-									<p class="infoContent">許多球友在推桿時，對於起桿與送桿的長度與力度經常難以拿捏。我的經驗是，4：6。</p>
+									<p class="infoContent">
+										許多球友在推桿時，對於起桿與送桿的長度與力度經常難以拿捏。我的經驗是，4：6。
+									</p>
 								</div>
-						</div>
-						<div class="contentWrapper">
+							</div>
+							<div class="contentWrapper">
 								<div class="iframeContainer">
-									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864640593680475%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+									<iframe
+										src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864640593680475%2F&show_text=0&width=560"
+										width="560"
+										height="315"
+										style="border: none; overflow: hidden"
+										scrolling="no"
+										frameborder="0"
+										allowTransparency="true"
+										allowfullscreen="true"
+									></iframe>
 								</div>
 								<div class="infoContainer">
 									<header class="infoHeader">《呂老師小撇步》002</header>
-									<p class="infoContent">在起伏較明顯的果嶺，尤其是下坡，我會在距離判斷後找出一個轉折點，然後用減少敲擊的動作送出。</p>
+									<p class="infoContent">
+										在起伏較明顯的果嶺，尤其是下坡，我會在距離判斷後找出一個轉折點，然後用減少敲擊的動作送出。
+									</p>
 								</div>
-						</div>
-						<div class="contentWrapper">
+							</div>
+							<div class="contentWrapper">
 								<div class="iframeContainer">
-									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864642277013640%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+									<iframe
+										src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864642277013640%2F&show_text=0&width=560"
+										width="560"
+										height="315"
+										style="border: none; overflow: hidden"
+										scrolling="no"
+										frameborder="0"
+										allowTransparency="true"
+										allowfullscreen="true"
+									></iframe>
 								</div>
 								<div class="infoContainer">
 									<header class="infoHeader">《呂老師小撇步》003</header>
-									<p class="infoContent">果嶺的上坡地形，通常我會設定在過洞後的一個目標，再以足夠的送桿來達到過洞的推球概念。</p>
+									<p class="infoContent">
+										果嶺的上坡地形，通常我會設定在過洞後的一個目標，再以足夠的送桿來達到過洞的推球概念。
+									</p>
 								</div>
-						</div>
-						<div class="contentWrapper">
+							</div>
+							<div class="contentWrapper">
 								<div class="iframeContainer">
-									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864654363679098%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+									<iframe
+										src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864654363679098%2F&show_text=0&width=560"
+										width="560"
+										height="315"
+										style="border: none; overflow: hidden"
+										scrolling="no"
+										frameborder="0"
+										allowTransparency="true"
+										allowfullscreen="true"
+									></iframe>
 								</div>
 								<div class="infoContainer">
 									<header class="infoHeader">《呂老師小撇步》004</header>
-									<p class="infoContent">在右往左曲的長推桿，我會在弧度最大的途中設一個轉折點，然後起桿時順著地形略為往內起桿送出。</p>
+									<p class="infoContent">
+										在右往左曲的長推桿，我會在弧度最大的途中設一個轉折點，然後起桿時順著地形略為往內起桿送出。
+									</p>
 								</div>
-						</div>
-						<div class="contentWrapper">
+							</div>
+							<div class="contentWrapper">
 								<div class="iframeContainer">
-									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864659817011886%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+									<iframe
+										src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864659817011886%2F&show_text=0&width=560"
+										width="560"
+										height="315"
+										style="border: none; overflow: hidden"
+										scrolling="no"
+										frameborder="0"
+										allowTransparency="true"
+										allowfullscreen="true"
+									></iframe>
 								</div>
 								<div class="infoContainer">
 									<header class="infoHeader">《呂老師小撇步》005</header>
-									<p class="infoContent">在多變的傾斜果嶺推桿不但要掌控距離還需觀察流向，特別左至右的推球，我會設定一個接近洞口點，桿面左延伸後會經由轉折點流轉至目標。</p>
+									<p class="infoContent">
+										在多變的傾斜果嶺推桿不但要掌控距離還需觀察流向，特別左至右的推球，我會設定一個接近洞口點，桿面左延伸後會經由轉折點流轉至目標。
+									</p>
 								</div>
-						</div>
-						<div class="contentWrapper">
+							</div>
+							<div class="contentWrapper">
 								<div class="iframeContainer">
-									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864920426985825%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+									<iframe
+										src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864920426985825%2F&show_text=0&width=560"
+										width="560"
+										height="315"
+										style="border: none; overflow: hidden"
+										scrolling="no"
+										frameborder="0"
+										allowTransparency="true"
+										allowfullscreen="true"
+									></iframe>
 								</div>
 								<div class="infoContainer">
 									<header class="infoHeader">《呂老師小撇步》006</header>
-									<p class="infoContent">短切球能處理的好，可說能畫龍點睛，尤其在高爾夫球的表現上，選落點、選桿非常重要，先掌握一項技能，以P桿為例，落一半滾動一半。</p>
+									<p class="infoContent">
+										短切球能處理的好，可說能畫龍點睛，尤其在高爾夫球的表現上，選落點、選桿非常重要，先掌握一項技能，以P桿為例，落一半滾動一半。
+									</p>
 								</div>
-						</div>
-						<div class="contentWrapper">
+							</div>
+							<div class="contentWrapper">
 								<div class="iframeContainer">
-									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864926056985262%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+									<iframe
+										src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864926056985262%2F&show_text=0&width=560"
+										width="560"
+										height="315"
+										style="border: none; overflow: hidden"
+										scrolling="no"
+										frameborder="0"
+										allowTransparency="true"
+										allowfullscreen="true"
+									></iframe>
 								</div>
 								<div class="infoContainer">
 									<header class="infoHeader">《呂老師小撇步》007</header>
-									<p class="infoContent">果嶺邊的切球，有多種不同距離與選桿，52度 切桿帶有稍微滾動的球路是不錯的選擇。</p>
+									<p class="infoContent">
+										果嶺邊的切球，有多種不同距離與選桿，52度
+										切桿帶有稍微滾動的球路是不錯的選擇。
+									</p>
 								</div>
-						</div>
-						<div class="contentWrapper">
+							</div>
+							<div class="contentWrapper">
 								<div class="iframeContainer">
-									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864930670318134%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+									<iframe
+										src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864930670318134%2F&show_text=0&width=560"
+										width="560"
+										height="315"
+										style="border: none; overflow: hidden"
+										scrolling="no"
+										frameborder="0"
+										allowTransparency="true"
+										allowfullscreen="true"
+									></iframe>
 								</div>
 								<div class="infoContainer">
 									<header class="infoHeader">《呂老師小撇步》008</header>
-									<p class="infoContent">在落地後沒有太多滾動空間的旗位，只能使用最大開放角度(58或60)的切桿。</p>
-									<p class="infoContent">★上桿時適度的曲起手腕，下擊動作力量運用在第一段。</p>
+									<p class="infoContent">
+										在落地後沒有太多滾動空間的旗位，只能使用最大開放角度(58或60)的切桿。
+									</p>
+									<p class="infoContent">
+										★上桿時適度的曲起手腕，下擊動作力量運用在第一段。
+									</p>
 								</div>
-						</div>
-						<div class="contentWrapper">
+							</div>
+							<div class="contentWrapper">
 								<div class="iframeContainer">
-									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864939010317300%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+									<iframe
+										src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864939010317300%2F&show_text=0&width=560"
+										width="560"
+										height="315"
+										style="border: none; overflow: hidden"
+										scrolling="no"
+										frameborder="0"
+										allowTransparency="true"
+										allowfullscreen="true"
+									></iframe>
 								</div>
 								<div class="infoContainer">
 									<header class="infoHeader">《呂老師小撇步》009</header>
-									<p class="infoContent">沙坑球是多數球友的夢魘，除了需要一支得宜的切桿。</p>
-									<p class="infoContent">★重點在起落的過程，保持一致的揮桿速度並防止翻轉桿面。</p>
+									<p class="infoContent">
+										沙坑球是多數球友的夢魘，除了需要一支得宜的切桿。
+									</p>
+									<p class="infoContent">
+										★重點在起落的過程，保持一致的揮桿速度並防止翻轉桿面。
+									</p>
 								</div>
-						</div>
-						<div class="contentWrapper">
+							</div>
+							<div class="contentWrapper">
 								<div class="iframeContainer">
-									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864945516983316%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+									<iframe
+										src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864945516983316%2F&show_text=0&width=560"
+										width="560"
+										height="315"
+										style="border: none; overflow: hidden"
+										scrolling="no"
+										frameborder="0"
+										allowTransparency="true"
+										allowfullscreen="true"
+									></iframe>
 								</div>
 								<div class="infoContainer">
 									<header class="infoHeader">《呂老師小撇步》010</header>
-									<p class="infoContent">常見的低球位，最容易在擊球時往右偏。</p>
-									<p class="infoContent">★因此設定方向於左側，減少身體上揚，往外起桿不翻轉桿面。</p>
+									<p class="infoContent">
+										常見的低球位，最容易在擊球時往右偏。
+									</p>
+									<p class="infoContent">
+										★因此設定方向於左側，減少身體上揚，往外起桿不翻轉桿面。
+									</p>
 								</div>
-						</div>
-						<div class="contentWrapper">
+							</div>
+							<div class="contentWrapper">
 								<div class="iframeContainer">
-									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864955366982331%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+									<iframe
+										src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864955366982331%2F&show_text=0&width=560"
+										width="560"
+										height="315"
+										style="border: none; overflow: hidden"
+										scrolling="no"
+										frameborder="0"
+										allowTransparency="true"
+										allowfullscreen="true"
+									></iframe>
 								</div>
 								<div class="infoContainer">
 									<header class="infoHeader">《呂老師小撇步》011</header>
-									<p class="infoContent">球道中難免有地形起伏的狀況，首要注意的是站姿的設定，左高右低的上坡球因為重心轉移不易，容易使桿面翻轉而球路偏左。</p>
-									<p class="infoContent">★因此設定時重心多於右側(低方)在於起桿時略微往內。</p>
+									<p class="infoContent">
+										球道中難免有地形起伏的狀況，首要注意的是站姿的設定，左高右低的上坡球因為重心轉移不易，容易使桿面翻轉而球路偏左。
+									</p>
+									<p class="infoContent">
+										★因此設定時重心多於右側(低方)在於起桿時略微往內。
+									</p>
 								</div>
-						</div>
-						<div class="contentWrapper">
+							</div>
+							<div class="contentWrapper">
 								<div class="iframeContainer">
-									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864969633647571%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+									<iframe
+										src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F864969633647571%2F&show_text=0&width=560"
+										width="560"
+										height="315"
+										style="border: none; overflow: hidden"
+										scrolling="no"
+										frameborder="0"
+										allowTransparency="true"
+										allowfullscreen="true"
+									></iframe>
 								</div>
 								<div class="infoContainer">
 									<header class="infoHeader">《呂老師小撇步》012</header>
-									<p class="infoContent">球道中有不平的球位都有它的難度，尤其右高左低的技術球。</p>
+									<p class="infoContent">
+										球道中有不平的球位都有它的難度，尤其右高左低的技術球。
+									</p>
 									<p class="infoContent">★先設定重心於左側(低方)</p>
 								</div>
-						</div>
-						<div class="contentWrapper">
+							</div>
+							<div class="contentWrapper">
 								<div class="iframeContainer">
-									<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F1974642199346970%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+									<iframe
+										src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F1974642199346970%2F&show_text=0&width=560"
+										width="560"
+										height="315"
+										style="border: none; overflow: hidden"
+										scrolling="no"
+										frameborder="0"
+										allowTransparency="true"
+										allowfullscreen="true"
+									></iframe>
 								</div>
 								<div class="infoContainer">
 									<header class="infoHeader">《呂老師小撇步》013</header>
-									<p class="infoContent">球道沙坑擊球會因為站位鬆動而影響揮桿。</p>
-									<p class="infoContent">★除了稍握短桿身，少一號的揮桿幅度，盡量減少身體移動。</p>
+									<p class="infoContent">
+										球道沙坑擊球會因為站位鬆動而影響揮桿。
+									</p>
+									<p class="infoContent">
+										★除了稍握短桿身，少一號的揮桿幅度，盡量減少身體移動。
+									</p>
 								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- End video -->
+				<!-- End video -->
+			</section>
+			<!-- End main -->
 
-		</section>
-		<!-- End main -->
-
-		<!-- Start footer -->
-		<footer class="footer">
-			<div class="container">
-				<div class="flex-container">
-					<div class="info-container">
-						<h2 class="footer-heading">聯絡資訊</h2>
-						<div class="tel">
-							<h5>石牌店</h5>
-							<ul class="tel"><a href="https://www.google.com/maps?q=%E5%8F%B0%E5%8C%97%E5%B8%82%E5%8C%97%E6%8A%95%E5%8D%80%E6%89%BF%E5%BE%B7%E8%B7%AF%E4%B8%83%E6%AE%B5223%E8%99%9F&uact=5&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjBx5-6o9_nAhXvy4sBHc7JCkAQ_AUoAXoECA0QAw" target="_blank">台北市北投區承德路七段223號</a></ul>	
-							<ul class="tel">02-2828-7313</ul>
-							<h5>碧潭店</h5>
-							<ul class="tel"><a href="https://www.google.com/maps/place/231%E6%96%B0%E5%8C%97%E5%B8%82%E6%96%B0%E5%BA%97%E5%8D%80%E6%BA%AA%E6%B4%B2%E8%B7%AF121%E8%99%9F/@24.9632735,121.5287659,17z/data=!3m1!4b1!4m5!3m4!1s0x346802242601f33d:0xf263470240cae246!8m2!3d24.9632735!4d121.5309546" target="_blank">新北市新店區溪洲路121號</a></ul>	
-							<ul class="tel">02-2212-6041</ul>
-							<h5><a href="https://www.facebook.com/lhcgolf/" target="_blank">FB 粉絲團</a></h5>
+			<!-- Start footer -->
+			<footer class="footer">
+				<div class="container">
+					<div class="flex-container">
+						<div class="info-container">
+							<h2 class="footer-heading">聯絡資訊</h2>
+							<div class="tel">
+								<h5>石牌店</h5>
+								<ul class="tel">
+									<a
+										href="https://www.google.com/maps?q=%E5%8F%B0%E5%8C%97%E5%B8%82%E5%8C%97%E6%8A%95%E5%8D%80%E6%89%BF%E5%BE%B7%E8%B7%AF%E4%B8%83%E6%AE%B5223%E8%99%9F&uact=5&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjBx5-6o9_nAhXvy4sBHc7JCkAQ_AUoAXoECA0QAw"
+										target="_blank"
+										>台北市北投區承德路七段223號</a
+									>
+								</ul>
+								<ul class="tel">
+									02-2828-7313
+								</ul>
+								<h5>碧潭店</h5>
+								<ul class="tel">
+									<a
+										href="https://www.google.com/maps/place/231%E6%96%B0%E5%8C%97%E5%B8%82%E6%96%B0%E5%BA%97%E5%8D%80%E6%BA%AA%E6%B4%B2%E8%B7%AF121%E8%99%9F/@24.9632735,121.5287659,17z/data=!3m1!4b1!4m5!3m4!1s0x346802242601f33d:0xf263470240cae246!8m2!3d24.9632735!4d121.5309546"
+										target="_blank"
+										>新北市新店區溪洲路121號</a
+									>
+								</ul>
+								<ul class="tel">
+									02-2212-6041
+								</ul>
+								<h5>
+									<a href="https://www.facebook.com/lhcgolf/" target="_blank"
+										>FB 粉絲團</a
+									>
+								</h5>
+							</div>
+						</div>
+						<div class="image-container">
+							<img
+								src="./images/qrcode_output.png"
+								alt="qrcode for adding friends on line app"
+							/>
+							<p>歡迎加入line好友！</p>
 						</div>
 					</div>
-					<div class="image-container">
-						<img src="./images/qrcode_output.png" alt="qrcode for adding friends on line app"/>
-						<p>歡迎加入line好友！</p>
-					</div>
 				</div>
-			</div>
-		</footer>
-		<!-- End footer -->
-	</div>
-
-</body>
+			</footer>
+			<!-- End footer -->
+		</div>
+	</body>
 </html>
