@@ -7,49 +7,30 @@
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/layout.css" />
 		<link rel="stylesheet" href="css/animate.css" />
-		<link
-			rel="stylesheet"
-			href="css/plugins/owl-carousel/owl.carousel.min.css"
-		/>
+		<link rel="stylesheet" href="css/plugins/owl-carousel/owl.carousel.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<style>
+			.myBlogPost__row {
+				display: flex;
+				gap: 16px;
+				padding-bottom: 64px;
+			}
+			.cardContainer {
+				flex: 1;
+				max-width: 400px;
+				display: grid;
+				place-content: start right;
+			}
 			.cardContainer img {
 				display: block;
 				width: 100%;
 				height: 100%;
-				object-fit: cover;
-			}
-			@media (max-width: 767px) {
-				.cardContainer img {
-					aspect-ratio: 1 / 1;
-				}
-			}
-
-			.myBlogPost__row {
-				display: flex;
-				gap: 16px;
-				padding-bottom: 152px;
-				min-height: 480px;
-				/*position: relative;*/
-			}
-
-			@media (max-width: 480px) {
-				.myBlogPost__row {
-					min-height: revert;
-					padding-bottom: 24px;
-				}
-			}
-			.cardContainer {
-				flex: 1;
-				transform: translateY(8px);
-				/*width: 100%;*/
+				object-fit: contain;
+				border-radius: 4px;
 			}
 			.infoContainer {
+				flex: 2;
 				padding: 8px;
-				flex: 3;
-				/*width: 100%;*/
-				/*border: 1px solid #000;*/
-				/*padding-left: 16px;*/
 			}
 			@media (max-width: 768px) {
 				.myBlogPost__row {
@@ -60,7 +41,6 @@
 					flex: 5;
 				}
 				.infoContainer {
-					/*padding-left: 8px;*/
 					flex: 7;
 				}
 			}
@@ -70,9 +50,8 @@
 				margin-bottom: 12px;
 			}
 			.infoContainer .textBox {
-				font-size: 14px;
+				font-size: 16px;
 				line-height: 1.8;
-				/*border: 1px solid #000;*/
 				max-width: 500px;
 			}
 			.infoContainer .textBox ul:last-child {
@@ -91,16 +70,28 @@
 			@media (max-width: 480px) {
 				.myBlogPost__row {
 					gap: 0px;
+					padding-bottom: 28px;
 				}
 				.cardContainer {
 					position: absolute;
 					top: 16px;
 					right: 16px;
-					width: 80px;
+					width: 200px;
+					clip-path: inset(0 0 0 80px round 4px);
+				}
+				.cardContainer.cardContainer__RK {
+					width: 120px;
+					top: -8px;
+					clip-path: circle();
+				}
+				.cardContainer.cardContainer__AL {
+					width: 120px;
+					top: -8px;
 					clip-path: circle();
 				}
 				.infoContainer {
 					padding: 16px;
+					max-width: calc(100% - 120px - 8px);
 				}
 				.infoContainer .name {
 					font-size: 28px;
@@ -119,10 +110,8 @@
 			<header
 				class="header"
 				style="
-					box-shadow: 0px 1px 1.1px hsl(83deg 72% 15% / 0.36),
-						0px 3.3px 3.7px -0.8px hsl(83deg 72% 15% / 0.36),
-						0px 8.2px 9.2px -1.7px hsl(83deg 72% 15% / 0.36),
-						0px 20px 22.5px -2.5px hsl(83deg 72% 15% / 0.36);
+					box-shadow: 0px 1px 1.1px hsl(83deg 72% 15% / 0.36), 0px 3.3px 3.7px -0.8px hsl(83deg 72% 15% / 0.36),
+						0px 8.2px 9.2px -1.7px hsl(83deg 72% 15% / 0.36), 0px 20px 22.5px -2.5px hsl(83deg 72% 15% / 0.36);
 					z-index: 2;
 				"
 			>
@@ -172,46 +161,31 @@
 						<div class="jumbotron__item">
 							<div
 								class="image"
-								style="
-									background-image: url('images/wallpaper019.jpg');
-									background-position: 50% 0%;
-								"
+								style="background-image: url('images/wallpaper019.jpg'); background-position: center 90%"
 							></div>
 						</div>
 						<div class="jumbotron__item">
 							<div
 								class="image"
-								style="
-									background-image: url('images/wallpaper022.JPG');
-									background-position: center bottom;
-								"
+								style="background-image: url('images/wallpaper022.JPG'); background-position: center bottom"
 							></div>
 						</div>
 						<div class="jumbotron__item">
 							<div
 								class="image"
-								style="
-									background-image: url('images/wallpaper023.JPG');
-									background-position: center bottom;
-								"
+								style="background-image: url('images/wallpaper023.JPG'); background-position: center bottom"
 							></div>
 						</div>
 						<div class="jumbotron__item">
 							<div
 								class="image"
-								style="
-									background-image: url('images/wallpaper020.JPG');
-									background-position: center bottom;
-								"
+								style="background-image: url('images/wallpaper020.JPG'); background-position: center bottom"
 							></div>
 						</div>
 						<div class="jumbotron__item">
 							<div
 								class="image"
-								style="
-									background-image: url('images/wallpaper021.JPG');
-									background-position: center 80%;
-								"
+								style="background-image: url('images/wallpaper021.JPG'); background-position: center 80%"
 							></div>
 						</div>
 					</div>
@@ -232,7 +206,7 @@
 								src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flhcgolf%2Fvideos%2F2553271488332303%2F&show_text=0&width=560"
 								width="560"
 								height="315"
-								style="border: none; overflow: hidden"
+								style="border: none; overflow: hidden; display: block"
 								scrolling="no"
 								frameborder="0"
 								allowTransparency="true"
@@ -252,7 +226,7 @@
 							<span></span>
 						</div>
 						<div class="row myBlogPost__row">
-							<div class="cardContainer" style="max-height: 328px">
+							<div class="cardContainer">
 								<img src="images/instructor/GL.jpg" alt="" />
 							</div>
 							<div class="infoContainer">
@@ -498,10 +472,10 @@
 							<span></span>
 						</div>
 						<div class="row myBlogPost__row">
-							<div class="cardContainer">
-								<img src="images/RoseKao.jpg" alt="" />
+							<div class="cardContainer cardContainer__RK">
+								<img src="images/RoseKao.jpg" alt="" style="max-width: 270px" />
 							</div>
-							<div class="infoContainer">
+							<div class="infoContainer infoContainer__RK">
 								<div class="name">高育薇 Rose Kao</div>
 								<div class="textBox">
 									<ul>
@@ -547,10 +521,10 @@
 							</div>
 						</div>
 						<div class="row myBlogPost__row">
-							<div class="cardContainer">
-								<img src="images/AaronLin3.jpg" alt="" />
+							<div class="cardContainer cardContainer__AL">
+								<img src="images/AaronLin.jpg" alt="" style="max-width: 270px" />
 							</div>
-							<div class="infoContainer">
+							<div class="infoContainer infoContainer__AL">
 								<div class="name">林敬恩 Aaron Lin</div>
 								<div class="textBox">
 									<ul>
@@ -634,25 +608,17 @@
 									02-2212-6041
 								</ul>
 								<h5>
-									<a href="https://www.facebook.com/lhcgolf/" target="_blank"
-										>FB 粉絲團</a
-									>
+									<a href="https://www.facebook.com/lhcgolf/" target="_blank">FB 粉絲團</a>
 								</h5>
 							</div>
 						</div>
 						<div class="qrcode-group">
 							<div class="image-container">
-								<img
-									src="./images/qrcodeS.png"
-									alt="qrcode for adding friends on line app"
-								/>
+								<img src="./images/qrcodeS.png" alt="qrcode for adding friends on line app" />
 								<p>歡迎加入石牌line好友！</p>
 							</div>
 							<div class="image-container">
-								<img
-									src="./images/qrcodeB.png"
-									alt="qrcode for adding friends on line app"
-								/>
+								<img src="./images/qrcodeB.png" alt="qrcode for adding friends on line app" />
 								<p>歡迎加入碧潭line好友！</p>
 							</div>
 						</div>
@@ -677,8 +643,8 @@
 					autoplay: true,
 					autoplaySpeed: 1000,
 					smartSpaeed: 500,
-				});
-			});
+				})
+			})
 		</script>
 	</body>
 </html>
