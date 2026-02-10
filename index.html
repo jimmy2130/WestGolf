@@ -90,10 +90,15 @@
 					clip-path: circle();
 				}
 				.cardContainer.cardContainer__AW {
-					width: 240px;
-					top: -8px;
-					right: -52px;
-					clip-path: circle(22% at 51% 22%);
+					top: 16px;
+					right: 16px;
+					width: 200px;
+					clip-path: inset(0 80px 0 0 round 4px);
+					transform: translateX(80px);
+				}
+				.myBlogPost__row:has(.cardContainer__AW) {
+					/* prevent image from overflowing the container */
+					overflow: hidden;
 				}
 				.infoContainer {
 					padding: 16px;
@@ -484,7 +489,13 @@
 								<div class="name">吳亞澄 Arthur Wu</div>
 								<div class="textBox">
 									<ul>
-										華盛頓大學畢業加拿大高中高爾夫校隊選手TPI Level 1 認證
+										華盛頓大學畢業
+									</ul>
+									<ul>
+										加拿大高中高爾夫校隊選手
+									</ul>
+									<ul>
+										TPI Level 1 認證
 									</ul>
 									<ul>
 										呂西鈞高爾夫教學教練
